@@ -1,0 +1,56 @@
+.task {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.task + .task {
+  margin-top: 0.75rem;
+}
+
+.task > input[type=checkbox] {
+  width: 1.091rem;
+  height: 1.091rem;
+}
+
+.task > span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: var(--gray-100);
+}
+
+.task > span.taskCompleted {
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+.task > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: none;
+  border-radius: 4px;
+  background: none;
+  color: var(--gray-300);
+  transition: .3s;
+}
+
+.task > button:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+  cursor: pointer;
+}
