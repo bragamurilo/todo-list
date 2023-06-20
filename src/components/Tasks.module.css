@@ -57,3 +57,35 @@
   margin-top: 1.5rem;
   list-style-type: none;
 }
+
+.noTasks {
+  padding: 4rem 1.5rem;
+
+  margin-top: 1.5rem;
+  border-top: 0.063rem solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.noTasks img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.noTasks > h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
+  color: var(--gray-300);
+}
+
+.noTasks > h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
+  color: var(--gray-300);
+}

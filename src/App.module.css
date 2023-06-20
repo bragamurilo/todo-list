@@ -6,3 +6,9 @@
   grid-template-columns: 1fr;
   align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
